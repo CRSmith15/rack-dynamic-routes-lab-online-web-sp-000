@@ -6,7 +6,7 @@ class Application
     
     if req.path.match(/items/name)
       resp.write ""
-      
+    end
   end
   
 end
