@@ -9,7 +9,7 @@ class Application
       item = @@items.find{|s| s.name == name}
       item[:price]
     else 
-      resp.write "Path not found"
+      resp.write "Route not found"
       resp.status = 404
     end
     resp.finish
