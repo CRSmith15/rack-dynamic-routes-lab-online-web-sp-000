@@ -9,7 +9,8 @@ class Application
       item = @@items.find{|s| s.name == name}
       item[:price]
     else 
-      
+      resp.write "Path not found"
+      resp
     end
   end
   
