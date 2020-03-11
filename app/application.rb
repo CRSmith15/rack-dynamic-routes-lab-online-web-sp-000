@@ -10,7 +10,7 @@ class Application
       item[:price]
     else 
       resp.write "Path not found"
-      resp
+      resp.status = 404
     end
   end
   
