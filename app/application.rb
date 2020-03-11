@@ -8,7 +8,8 @@ class Application
       item_name = req.path.split("/items/").last
       item = @@items.detect{|s| s.name == item_name}
       if item 
-        
+        resp.write item.price
+      else
     else 
       resp.write "Route not found"
       resp.status = 404
